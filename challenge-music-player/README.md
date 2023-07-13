@@ -1,4 +1,4 @@
-<h2 align="center">Desafio Music Player</h2>
+<h2 align="center">🎵 Desafio Music Player</h2>
 
 <p align="center">
     <img src="assets/images/result.png" alt="Resultado final do projeto" width="100%">
@@ -16,8 +16,10 @@ Para o desafio 1, como solicitado, foi desenvolvido, com HTML e CSS, um Music Pl
 - Pseudo-classe :root
 - Reprodução do layout do Figma
 
-<h3>Status do projeto</h3>
+<h3>📝 Status do projeto</h3>
 
-✅ Concluído
+Concluído
 
-<footer align="center">Feito com 🧡 por Lucas Moraes</footer>
+<div align="center">
+    <footer>Feito com 🧡 por Lucas Moraes</footer>
+</div>
