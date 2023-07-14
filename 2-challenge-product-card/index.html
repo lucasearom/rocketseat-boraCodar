@@ -1,14 +1,48 @@
 <!DOCTYPE html>
 <html lang="pt-br">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
 
-    <link rel="stylesheet" href="assets/style/style.css">
-    
+    <link rel="stylesheet" href="assets/style/style.css" />
+
     <title>Card de Produto</title>
-</head>
-<body>
-    
-</body>
+  </head>
+  <body>
+    <main id="container">
+      <div class="sofa-image">
+        <button id="btn-view-all">
+          <img src="./assets/images/view-all.svg" alt="Visualizar em 360º" />
+        </button>
+
+        <button id="btn-close">
+          <img src="./assets/images/view-close.svg" alt="Visualização normal" />
+        </button>
+
+        <img
+          id="sofa-normal"
+          src="./assets/images/sofa-normal.png"
+          alt="Sofá Margot II - Rosé (Normal)"
+        />
+
+        <img
+          id="sofa-gif"
+          src="./assets/images/sofa-animated.gif"
+          alt="Sofá Margot II - Rosé (Gif)"
+        />
+      </div>
+
+      <div class="sofa-details">
+        <div class="sofa-description">
+          <span class="sofa-code">Código: 42404</span>
+          <h1>Sofá Margot II - Rosé</h1>
+          <span class="sofa-price">R$: 4.000</span>
+        </div>
+
+        <div class="sofa-buy">
+          <button class="sofa-shop">Adicionar à cesta</button>
+        </div>
+      </div>
+    </main>
+  </body>
 </html>
