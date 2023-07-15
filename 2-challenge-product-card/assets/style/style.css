@@ -4,3 +4,110 @@
     --text-color: rgb(40, 27, 70);
     --text-price-color: rgba(40, 27, 70, 0.67);
 }
+
+* {
+    margin: 0;
+    padding: 0; 
+    box-sizing: border-box;
+}
+
+body {
+    width: 100vw;
+    height: 100vh;
+    background-color: var(--bg-color);
+    display: flex;
+}
+
+#container {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    gap: 13px;
+}
+
+.sofa-image {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: relative;
+}
+
+.sofa-image button {
+    border: none;
+    background-color: transparent;
+    position: absolute;
+    cursor: pointer;
+    top: 8px;
+    right: 50px;
+}
+
+.sofa-image #btn-view-all {
+    width: 33px;
+}
+.sofa-image #btn-view-all > img {
+    width: 100%;
+}
+
+.sofa-image #btn-close {
+    width: 16px;
+}
+
+.sofa-image #btn-close > img {
+    width: 100%;
+}
+
+.sofa-image > img {
+    width: 449px;
+}
+
+.sofa-details {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    gap: 20px;
+}
+
+.sofa-description {
+    display: flex;
+    flex-direction: column;
+    gap: 12px;
+}
+
+.sofa-description .sofa-code {
+    font-family: 'Lato', sans-serif;
+    color: var(--text-color);
+    font-size: 10px;
+    font-weight: 300;
+}
+
+.sofa-description h1 {
+    font-family: 'Crimson Pro', sans-serif;
+    color: var(--text-color);
+    font-weight: 600;
+    font-size: 2rem;
+}
+
+.sofa-description .sofa-price {
+    font-family: 'Lato', sans-serif;
+    color: var(--text-price-color);
+    font-size: 1rem;
+}
+
+.sofa-buy button {
+    border: solid .5px var(--text-color);
+    background: transparent;
+    cursor: pointer;
+    font-family: 'Lato', sans-serif;
+    color: var(--text-color);
+    line-height: 16px;
+    font-size: 12px;
+    padding: 8px 16px;
+    text-transform: uppercase;
+    border-radius: 999px;
+    transition: ease-in-out .3s ;
+}
+
+.sofa-buy button:hover {
+    color: var(--bg-color);
+    background-color: var(--text-color);
+}
