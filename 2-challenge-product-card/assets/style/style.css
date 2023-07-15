@@ -1,0 +1,6 @@
+:root {
+    --bg-color: #D9CDF7;
+
+    --text-color: rgb(40, 27, 70);
+    --text-price-color: rgba(40, 27, 70, 0.67);
+}
