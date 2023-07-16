@@ -1,4 +1,4 @@
-<h2 align="center">🎵 Desafio Card Produto</h2>
+<h2 align="center">🛋️ Desafio Card Produto</h2>
 
 <p align="center">
     <img src="assets/images/result.png" alt="Resultado final do projeto" width="100%">
