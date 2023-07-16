@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html lang="pt-br">
+<html lang="pt-br" class="animated">
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
@@ -18,22 +18,22 @@
   <body>
     <main id="container">
       <div class="sofa-image">
-        <button id="btn-view-all">
+        <button id="btn-view-all" onclick="toggle()">
           <img src="./assets/images/view-all.svg" alt="Visualizar em 360º" />
         </button>
 
-        <button id="btn-close">
+        <button id="btn-close" onclick="toggle()">
           <img src="./assets/images/view-close.svg" alt="Visualização normal" />
         </button>
 
         <img
-          id="sofa-normal"
+          id="static"
           src="./assets/images/sofa-normal.png"
           alt="Sofá Margot II - Rosé (Normal)"
         />
 
         <img
-          id="sofa-gif"
+          id="animated"
           src="./assets/images/sofa-animated.gif"
           alt="Sofá Margot II - Rosé (Gif)"
         />
@@ -51,5 +51,7 @@
         </div>
       </div>
     </main>
+
+    <script src="./assets/javascript/script.js"></script>
   </body>
 </html>
