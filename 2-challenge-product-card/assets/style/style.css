@@ -16,11 +16,19 @@ body {
     height: 100vh;
     background-color: var(--bg-color);
     display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+#btn-close, 
+#animated {
+    display: none;
 }
 
 #container {
     display: flex;
     flex-direction: row;
+    justify-content: center;
     align-items: center;
     gap: 13px;
 }
@@ -41,6 +49,16 @@ body {
     right: 50px;
 }
 
+html.animated button#btn-view-all,
+html.animated img#static {
+  display: none;
+}
+
+html.animated button#btn-close,
+html.animated img#animated {
+  display: initial;
+}
+
 .sofa-image #btn-view-all {
     width: 33px;
 }
@@ -58,6 +76,7 @@ body {
 
 .sofa-image > img {
     width: 449px;
+    object-fit: cover;
 }
 
 .sofa-details {
