@@ -1,5 +1,81 @@
+:root {
+  --bg-color-main: #0B0911;
+
+  --bg-color-aside: #130F1E;
+  --bg-color-button-primary: #8257E5;
+  --bg-color-button-secundary: #3C3748;
+  --bg-color-button-terciary: #8257E5;
+  --font-text-button-aside: normal 500 .875em/24px 'Inter', sans-serif;
+
+  --color-text-first: #FFF;
+  --color-text-second: rgba(255, 255, 255, 0.67);
+
+  --font-text-heading: normal bold 2rem/normal 'Inter', sans-serif; /* Font Style, weight, size, line-height, family */
+  --font-text-paragraph: normal 400 1.1rem/normal 'Roboto', sans-serif;
+}
+
 * {
     margin: 0;
     padding: 0;
     box-sizing: border-box;
+  }
+
+  body {
+    background-color: var(--bg-color-main);
+    width: 100%;
+    height: 100vh;
+    display: flex;
+    flex-direction: row;
+  }
+
+  main {
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+    justify-content: center;
+    padding: 107px 110px 76px 77px ;
+  }
+
+  aside {
+    background-color: var(--bg-color-aside);
+    display: flex;
+    flex-direction: column;
+    padding: 107px 44px 0;
+    gap: 68px;
+  }
+
+  .text-test-buttons {
+    display: flex;
+    flex-direction: column;
+    gap: 8px;
+    width: 318px;
+  }
+
+  .text-test-buttons h1 {
+    color: var(--color-text-first);
+    font: var(--font-text-heading);
+  }
+
+  .text-test-buttons p {
+    color: var(--color-text-second);
+    font: var(--font-text-paragraph);
+  }
+
+  .interact-buttons {
+    display: flex;
+    flex-direction: column;
+    width: 318px;
+    gap: 32px;
+  }
+
+  .interact-buttons button {
+    border: none;
+    border-radius: 24px;
+    height: 48px;
+  }
+
+  .interact-buttons button:nth-child(1) {
+    background-color: var(--bg-color-button-primary);
+    font: var(--font-text-button-aside);
+    color: var(--color-text-first);
   }
