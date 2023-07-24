@@ -4,6 +4,13 @@
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
 
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Inter:wght@500;700&family=Roboto&display=swap"
+      rel="stylesheet"
+    />
+
     <link rel="stylesheet" href="./assets/style/style.css" />
 
     <title>Botões e Cursores</title>
@@ -18,23 +25,149 @@
         </p>
       </section>
 
-      <section id="table-buttons"></section>
-
-      <aside id="test-buttons">
-        <div class="text-test-buttons">
-          <h2>Teste os botões</h2>
-          <p>
-            Interaja com os botões e observe a mudança de aparência e de
-            cursores
-          </p>
-        </div>
-
-        <div class="interaja-buttons">
-          <button>INTERAJA COMIGO</button>
-          <button disabled>INTERAJA COMIGO</button>
-          <button movable>INTERAJA COMIGO</button>
-        </div>
-      </aside>
+      <section id="table-buttons">
+        <table>
+          <thead>
+            <tr>
+              <th></th>
+              <th>BOTÃO PRIMÁRIA</th>
+              <th>BOTÃO SEGUNDÁRIO</th>
+              <th>BOTÃO TERCIÁRIO</th>
+              <th>CURSOR</th>
+            </tr>
+          </thead>
+          <tbody>
+            <tr>
+              <td>DEFAULT</td>
+              <td><button>Default Primary</button></td>
+              <td><button>Default Secondary</button></td>
+              <td><button>Default Primary</button></td>
+              <td>
+                <img
+                  src="./assets/images/default-cursor.svg"
+                  alt="Cursor Padrão"
+                />
+              </td>
+            </tr>
+            <tr>
+              <td>HOVER</td>
+              <td><button>Hover Primary</button></td>
+              <td><button>Hover Secondary</button></td>
+              <td><button>Hover Primary</button></td>
+              <td>
+                <img
+                  src="./assets/images/default-cursor.svg"
+                  alt="Cursor Padrão"
+                />
+              </td>
+            </tr>
+            <tr>
+              <td>FOCUS</td>
+              <td><button>Focus Primary</button></td>
+              <td><button>Focus Secondary</button></td>
+              <td><button>Focus Primary</button></td>
+              <td>
+                <img
+                  src="./assets/images/default-cursor.svg"
+                  alt="Cursor Padrão"
+                />
+              </td>
+            </tr>
+            <tr>
+              <td>DISABLED</td>
+              <td><button>Disabled Primary</button></td>
+              <td><button>Disabled Secondary</button></td>
+              <td><button>Disabled Primary</button></td>
+              <td>
+                <img
+                  src="./assets/images/disabled-cursor.png"
+                  alt="Cursor Desativado"
+                />
+              </td>
+            </tr>
+            <tr>
+              <td>LOADING</td>
+              <td>
+                <button>
+                  <img
+                    src="./assets/images/loading.png"
+                    alt="Loading Logo"
+                  />Loading Primary
+                </button>
+              </td>
+              <td>
+                <button>
+                  <img
+                    src="./assets/images/loading.png"
+                    alt="Loading Logo"
+                  />Loading Secondary
+                </button>
+              </td>
+              <td>
+                <button>
+                  <img
+                    src="./assets/images/loading.png"
+                    alt="Loading Logo"
+                  />Loading Primary
+                </button>
+              </td>
+              <td>
+                <img
+                  src="./assets/images/loading-cursor.svg"
+                  alt="Cursor Carregar"
+                />
+              </td>
+            </tr>
+            <tr>
+              <td>MOVABLE</td>
+              <td>
+                <button>
+                  <img
+                    src="./assets/images/reorder-three.svg"
+                    alt="Movable Logo"
+                  />Movable Primary
+                </button>
+              </td>
+              <td>
+                <button>
+                  <img
+                    src="./assets/images/reorder-three.svg"
+                    alt="Movable Logo"
+                  />Movable Secondary
+                </button>
+              </td>
+              <td>
+                <button>
+                  <img
+                    src="./assets/images/reorder-three.svg"
+                    alt="Movable Logo"
+                  />Movable Primary
+                </button>
+              </td>
+              <td>
+                <img
+                  src="./assets/images/movable-cursor.svg"
+                  alt="Cursor Mover"
+                />
+              </td>
+            </tr>
+          </tbody>
+        </table>
+      </section>
     </main>
+    <aside id="test-buttons">
+      <div class="text-test-buttons">
+        <h1>Teste os botões</h1>
+        <p>
+          Interaja com os botões e observe a mudança de aparência e de cursores
+        </p>
+      </div>
+
+      <div class="interact-buttons">
+        <button>INTERAJA COMIGO</button>
+        <button>INTERAJA COMIGO</button>
+        <button>INTERAJA COMIGO</button>
+      </div>
+    </aside>
   </body>
 </html>
